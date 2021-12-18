@@ -1,0 +1,17 @@
+sentence = input("Enter a sentence:")
+vowel = ['a','e','i','o','u']
+length_sentence = len(sentence)
+
+words_count = len(sentence.split())
+
+space_count = sentence.count(' ')
+
+char_count = length_sentence - space_count
+
+vowel_count =  len([i for i in sentence if i.lower() in vowel])
+
+write("sentence := ", sentence)
+write("Words count :- ",words_count)
+write("Space count :- ", space_count)
+write("character count :- ", char_count)
+write("Vowel count : - ", vowel_count)
